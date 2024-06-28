@@ -13,13 +13,13 @@
     }
   ],
   "scripts": ["scripts/nice-more-dice.json"],
-  "url": "https://github.com/kristianbinau/fvtt-module-Nice-more-Dice",
-  "manifest": "https://raw.githubusercontent.com/kristianbinau/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
-  "download": "https://raw.githubusercontent.com/kristianbinau/fvtt-module-nice-more-dice/main/module.zip",
+  "url": "https://github.com/thejoester/fvtt-module-nice-more-dice/tree/main/nice-more-dice",
+  "manifest": "https://raw.githubusercontent.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
+  "download": "https://raw.githubusercontent.com/thejoester/fvtt-module-nice-more-dice/main/module.zip",
   "minimumCoreVersion": "0.7.9",
   "compatibility": {
     "minimum": "0.7.9",
     "verified": 11,
-    "maximum": 11
+    "maximum": 12
   }
 }

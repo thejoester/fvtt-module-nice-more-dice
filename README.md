@@ -1,3 +1,4 @@
+# ⚠ This is a fork of the [original module](https://github.com/kristianbinau/fvtt-module-Nice-more-Dice) so it will work for V12 - All ownership/credit of any art goes to the original author [kristianbinau](https://github.com/kristianbinau)!
 # Nice more Dice
 
 ![preview](Images/cover.jpg?raw=true)

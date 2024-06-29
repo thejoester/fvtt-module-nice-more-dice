@@ -1,4 +1,7 @@
 # ⚠ This is a fork of the [original module](https://github.com/kristianbinau/fvtt-module-Nice-more-Dice) so it will work for V12 - All ownership/credit of any art goes to the original author [kristianbinau](https://github.com/kristianbinau)!
+
+To use this version, use the Manifest: ```https://raw.githubusercontent.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json```
+
 # Nice more Dice
 
 ![preview](Images/cover.jpg?raw=true)

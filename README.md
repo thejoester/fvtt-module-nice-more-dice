@@ -1,4 +1,4 @@
-# ⚠ This is a fork of the [original module](https://github.com/kristianbinau/fvtt-module-Nice-more-Dice) so it will work for V12 - All ownership/credit of any art goes to the original author [kristianbinau](https://github.com/kristianbinau)!
+# ⚠ This is a fork of the [original module](https://github.com/LyncsCwtsh/fvtt-module-nice-more-dice) so it will work for V12 - All ownership/credit of any art goes to the original author [LyncsCwtsh](https://github.com/LyncsCwtsh)!
 
 To use this version, use the Manifest: ```https://raw.githubusercontent.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json```
 

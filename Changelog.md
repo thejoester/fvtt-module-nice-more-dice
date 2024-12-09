@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+- Forked from [https://github.com/kristianbinau/fvtt-module-nice-more-dice](https://github.com/kristianbinau/fvtt-module-nice-more-dice/)
+- Updated module.json to work with V12
+  
 ## 1.2.0
 - NEW: Halloween Dice Set - all the spookiness you could ever want
 - NEW: Candy Corn Texture - non-edible, but colourful

@@ -2,8 +2,7 @@
 
 This is a fork of https://github.com/kristianbinau/fvtt-module-nice-more-dice/, which was a fork of https://github.com/LyncsCwtsh/fvtt-module-nice-more-dice
 
-I simply updated the module.json in order to be compatible with V12. All art and other assets are credited at https://github.com/LyncsCwtsh/fvtt-module-nice-more-dice
-
+I simply updated the module.json in order to be compatible with V12. All art and other assets are credited at [https://github.com/thejoester/fvtt-module-nice-more-dice/blob/main/Used%20Assets%20Credits.md](https://github.com/thejoester/fvtt-module-nice-more-dice/blob/main/Used%20Assets%20Credits.md)
 
 ![preview](Images/cover.jpg?raw=true)
 

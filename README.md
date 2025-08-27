@@ -14,6 +14,6 @@ All art and other assets are credited at [https://github.com/LyncsCwtsh/fvtt-mod
 ## How to install this version in FoundryVTT
 - Open Foundry VTT and go to the “Add-on Modules” tab on the setup screen.
 - Click the “Install Module” button.
-- In the Manifest URL field, paste this link: `https://github.com/thejoester/fvtt-module-nice-more-dice/raw/main/nice-more-dice/module.json`
+- In the Manifest URL field, paste this link: `https://github.com/thejoester/fvtt-module-nice-more-dice/releases/download/1.2.2/module.json`
 - Click Install. 
 - After installation, enable the module in your World Settings → Manage Modules menu.

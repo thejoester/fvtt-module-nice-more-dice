@@ -34,9 +34,8 @@ jobs:
           download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/dsn.zip
 
       - name: Create Module Archive
-        run: |
-		cd nice-more-dice
-		zip -r ../dsn.zip *
+        working-directory: nice-more-dice
+        run: zip -r ../dsn.zip .
 
       - uses: release-flow/keep-a-changelog-action@v3
         id: changelog

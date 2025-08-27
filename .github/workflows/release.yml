@@ -48,7 +48,7 @@ jobs:
         id: changelog
         with:
           command: query
-          changelog: Changelog.md
+          changelog: CHANGELOG.md
           version: ${{ steps.get_version.outputs.version-without-v }}
 
       - name: Update Release With Files

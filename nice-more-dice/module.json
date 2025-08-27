@@ -3,9 +3,9 @@
   "id": "nice-more-dice",
   "title": "Nice more Dice",
   "description": "Adds a bunch of dice textures and dice faces to DsN.",
-  "version": "1.2.0",
-  "readme": "https://github.com/kristianbinau/fvtt-module-nice-more-dice/blob/main/README.md",
-  "changelog": "https://github.com/kristianbinau/fvtt-module-nice-more-dice/blob/main/Changelog.md",
+  "version": "1.2.1",
+  "readme": "https://github.com/thejoester/fvtt-module-nice-more-dice/blob/main/README.md",
+  "changelog": "https://github.com/thejoester/fvtt-module-nice-more-dice/blob/main/Changelog.md",
   "author": "LyncsCwtsh",
   "authors": [
     {
@@ -13,13 +13,13 @@
     }
   ],
   "scripts": ["scripts/nice-more-dice.json"],
-  "url": "https://github.com/kristianbinau/fvtt-module-Nice-more-Dice",
-  "manifest": "https://raw.githubusercontent.com/kristianbinau/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
-  "download": "https://raw.githubusercontent.com/kristianbinau/fvtt-module-nice-more-dice/main/module.zip",
+  "url": "https://github.com/thejoester/fvtt-module-nice-more-dice",
+  "manifest": "https://github.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
+  "download": "https://github.com/thejoester/fvtt-module-nice-more-dice/main/dsn.zip",
   "minimumCoreVersion": "0.7.9",
   "compatibility": {
     "minimum": "0.7.9",
-    "verified": 11,
-    "maximum": 11
+    "verified": 13,
+    "maximum": 13
   }
 }

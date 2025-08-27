@@ -23,30 +23,32 @@ jobs:
         id: get_version
         uses: battila7/get-version-action@v2
 
-      # Edit the manifest INSIDE the package folder so the zip has the right values
-      - name: Modify Module Manifest With Release-Specific Values
-        id: sub_manifest_link_version
-        uses: microsoft/variable-substitution@v1
-        with:
-          files: "nice-more-dice/module.json"
-        env:
-          version: ${{ steps.get_version.outputs.version-without-v }}
-          manifest: https://github.com/${{ github.repository }}/releases/latest/download/module.json
-          download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.release.tag_name }}/dsn.zip
+      # Patch the manifest INSIDE nice-more-dice so the ZIP has correct fields
+      - name: Update module.json (jq)
+        run: |
+          VERSION='${{ steps.get_version.outputs.version-without-v }}'
+          MANIFEST='https://github.com/${{ github.repository }}/releases/latest/download/module.json'
+          DOWNLOAD='https://github.com/${{ github.repository }}/releases/download/${{ github.event.release.tag_name }}/dsn.zip'
+          jq --arg v "$VERSION" --arg m "$MANIFEST" --arg d "$DOWNLOAD" \
+             '.version=$v | .manifest=$m | .download=$d' \
+             nice-more-dice/module.json > nice-more-dice/module.json.tmp
+          mv nice-more-dice/module.json.tmp nice-more-dice/module.json
 
-      # Copy the edited manifest to repo root so we can upload it as a release asset
+      # Copy the edited manifest to repo root so we can upload it as a separate asset
       - name: Copy manifest to root for release asset
         run: cp nice-more-dice/module.json module.json
 
-      # Zip ONLY the contents of nice-more-dice/ (preserve subfolders, no top-level folder)
+      # ZIP only the contents of nice-more-dice/, preserving subfolders, no top-level wrapper
       - name: Create Module Archive
         working-directory: nice-more-dice
         run: zip -r ../dsn.zip .
 
+      # Pull release notes from Changelog.md (note the capitalization)
       - uses: release-flow/keep-a-changelog-action@v3
         id: changelog
         with:
           command: query
+          changelog: Changelog.md
           version: ${{ steps.get_version.outputs.version-without-v }}
 
       - name: Update Release With Files
@@ -62,3 +64,12 @@ jobs:
           artifacts: |
             module.json
             dsn.zip
+
+      # Optional: publish to Foundry website (unchanged)
+      - name: Publish Module to FoundryVTT Website
+        id: publish-to-foundry-website
+        if: ${{ ! github.event.release.prerelease }}
+        uses: cs96and/FoundryVTT-release-package@v1
+        with:
+          package-token: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}
+          manifest-url: https://github.com/${{ github.repository }}/releases/download/${{ github.event.release.tag_name }}/module.json

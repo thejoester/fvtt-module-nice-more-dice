@@ -14,7 +14,7 @@
   ],
   "scripts": ["scripts/nice-more-dice.json"],
   "url": "https://github.com/thejoester/fvtt-module-nice-more-dice",
-  "manifest": "hhttps://github.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
+  "manifest": "https://github.com/thejoester/fvtt-module-nice-more-dice/main/nice-more-dice/module.json",
   "download": "https://github.com/thejoester/fvtt-module-nice-more-dice/main/module.zip",
   "minimumCoreVersion": "0.7.9",
   "compatibility": {

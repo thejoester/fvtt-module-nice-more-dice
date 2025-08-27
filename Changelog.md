@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.2
+## [1.2.2] - 2025-08-27
 - Updated manifest for v13 support
 
 ## 1.2.1

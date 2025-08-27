@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.2
+- Updated manifest for v13 support
+
 ## 1.2.1
 - Forked from [https://github.com/kristianbinau/fvtt-module-nice-more-dice](https://github.com/kristianbinau/fvtt-module-nice-more-dice/)
 - Updated module.json to work with V12
